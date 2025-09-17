@@ -302,7 +302,7 @@ namespace WlepPress
         private void btnPinterestDownload_Click(object sender, EventArgs e)
         {
 
-            string scriptPath = @"download_pins.py";
+            string scriptPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "download_pins.py");
 
             using (var logForm = new LogViewerForm("py", scriptPath))
             {
